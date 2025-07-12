@@ -1,7 +1,7 @@
 [
   {
     "title": "Online Bus booking Application",
-    "image": "./assets/images/projects/1000219634.PNG",
+    "image": "./assets/images/projects/bus.png",
     "Tools Used": "Springboot, MongoDB, Java, HTML, CSS, JavaScript",
     "description": "This an Android, Web Application which allow users to book tickets and to fetch booking history.Allows SuperAdmin to perform CRUD Operations.",
     "preview": "https://busbooking-avq3.onrender.com",
