@@ -233,5 +233,3 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
 
-// Tawk.to live chat integration
-
