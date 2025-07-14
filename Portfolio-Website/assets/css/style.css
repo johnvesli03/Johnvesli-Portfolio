@@ -704,11 +704,6 @@ header .navbar ul li a:hover {
     background: #ffffff;
 }
 
-/* Keep a subtle shadow on hover if you like */
-.education .box-container .box:hover {
-    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.2);
-}
-
 /* Uniform image size for all boxes */
 .education .box-container .box .image {
     flex: 0 0 35%;
