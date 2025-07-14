@@ -672,158 +672,129 @@ header .navbar ul li a:hover {
 /* education section starts */
 
 .education {
-    background: #f5f8ff;
-    min-height: 80vh;
-    padding: 2rem 1rem;
+  background: #f5f8ff;
+  padding: 2rem 1rem;
+}
+
+.education .heading {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  color: #012970;
+  margin-bottom: 2rem;
 }
 
 .education .qoute {
-    font-size: 1.8rem;
-    text-align: center;
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    color: #012970;
-    margin: 1rem 0;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #012970;
+  margin-bottom: 3rem;
 }
 
-.education .box-container {
-    display: flex;
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.education-list .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.education-list .box .image {
+  flex: 0 0 35%;
+  max-width: 35%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.education-list .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.education-list .box .content {
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  text-align: left;
+}
+
+.education-list .box .content h3 {
+  font-size: 2.2rem;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.education-list .box .content p {
+  font-size: 1.4rem;
+  color: #555;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.education-list .box .content h4 {
+  font-size: 1.6rem;
+  color: #227100;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+/* Add subtle image zoom on hover */
+.education-list .box .image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .education-list .box {
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
+    width: 90%;
+  }
 
-.education .box-container .box {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    border-radius: 0.8rem;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
-    text-align: center;
-    overflow: hidden;
-    background: #ffffff;
-}
-
-/* Uniform image size for all boxes */
-.education .box-container .box .image {
-    flex: 0 0 35%;
-    max-width: 35%;
-    height: 220px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.education .box-container .box img {
+  .education-list .box .image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    max-width: 100%;
+    height: 250px;
+  }
 }
 
-/* Content area */
-.education .box-container .box .content {
-    flex: 1 1 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    text-align: left;
-}
+@media (max-width: 600px) {
+  .education-list .box .content {
+    padding: 1.5rem;
+  }
 
-/* Heading */
-.education .box-container .box .content h3 {
-    font-size: 2.2rem;
-    color: #012970;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
+  .education-list .box .content h3 {
+    font-size: 2rem;
+  }
 
-/* Description text */
-.education .box-container .box .content p {
+  .education-list .box .content p {
+    font-size: 1.3rem;
+  }
+
+  .education-list .box .content h4 {
     font-size: 1.4rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: #555;
-    font-family: "Nunito", sans-serif;
-    line-height: 1.5;
-}
-
-/* Date line */
-.education h4 {
-    font-size: 1.6rem;
-    color: #227100;
-    text-align: left;
-    margin: 1rem 0 0 1rem;
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-}
-
-/* Buttons if present */
-.education .btns {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.education .btns a {
-    display: inline-block;
-    background: #012970;
-    color: #fff;
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.5rem;
-    font-size: 1.4rem;
-    text-decoration: none;
-}
-
-.education .btns a:hover {
-    background: #0340b3;
-}
-
-/* Media queries */
-@media screen and (max-width: 768px) {
-    .education .box-container .box {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .education .box-container .box .image {
-        width: 100%;
-        max-width: 100%;
-        height: 250px;
-    }
-
-    .education .box-container .box .content {
-        padding: 1.5rem;
-    }
-
-    .education .box-container .box .content h3 {
-        font-size: 2rem;
-    }
-
-    .education .box-container .box .content p {
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .education .qoute {
-        font-size: 1.5rem;
-    }
-
-    .education .box-container .box .content h3 {
-        font-size: 1.8rem;
-    }
-
-    .education .box-container .box .content p {
-        font-size: 1.2rem;
-    }
-
-    .education h4 {
-        font-size: 1.4rem;
-    }
+  }
 }
 
 /* education media queries ends*/
