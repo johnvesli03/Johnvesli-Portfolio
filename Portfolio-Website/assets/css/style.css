@@ -16,7 +16,24 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+@keyframes wave-animation {
+            0% { transform: rotate( 0.0deg) }
+           10% { transform: rotate(14.0deg) }
+           20% { transform: rotate(-8.0deg) }
+           30% { transform: rotate(14.0deg) }
+           40% { transform: rotate(-4.0deg) }
+           50% { transform: rotate(10.0deg) }
+           60% { transform: rotate( 0.0deg) }
+          100% { transform: rotate( 0.0deg) }
+        }
 
+        .waving-hand {
+            display: inline-block;
+            animation: wave-animation 2.5s infinite;
+            transform-origin: 70% 70%;
+            /* Make sure the hand size matches your heading size */
+            font-size: inherit; 
+        }
 body {
     background: #f7f7f7;
     font-family: "Poppins", sans-serif;
