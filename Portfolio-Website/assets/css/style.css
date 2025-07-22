@@ -449,18 +449,17 @@ header .navbar ul li a:hover {
     text-align: center;
     flex: 1 1 50rem;
 }
-
 .about .row .image img {
-    margin: 5rem auto;
-    width: 42rem;
-    /* increased from 36rem */
-    height: auto;
-    border-radius: 4%;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
-    mix-blend-mode: luminosity;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
+            margin: 0; /* Removed margin for better alignment */
+            width: 42rem;
+            height: 42rem; /* Make height equal to width */
+            object-fit: cover; /* Prevents image from stretching */
+            border-radius: 50%; /* This creates the circle */
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Softened shadow */
+            mix-blend-mode: luminosity;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
 
 .about .row .image img:hover {
     mix-blend-mode: normal;
