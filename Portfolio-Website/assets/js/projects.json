@@ -22,5 +22,14 @@
     "description": "A fully functional application, which allows SuperAdmin to View Employees,Performs CRUD Operations, Update data, salaries",
     "preview": "https://github.com/johnvesli03/Guvi-MiniProject_01",
     "github": "https://github.com/johnvesli03/Guvi-MiniProject_01"
+  },
+  {
+    "title": "Parivahan Dashboard",
+    "image": "./assets/images/projects/Parivahan_Dashboard.png",
+    "Tools Used": "Springboot, SQL, Java, HTML, CSS, JavaScript",
+    "description": "An Interactive dashboard built with Java and Springboot to analyze Indian Registration Data. It Calculates YoY and QoQ growth and allows filtering by state, year, quarter and manufacture",
+    "preview": "https://drive.google.com/file/d/1jtO7-0o1eIslqvV_3bVo2tvj-o0Aw_Ti/view",
+    "github": "https://github.com/johnvesli03/ParivahanDashboard"
   }
 ]
+
