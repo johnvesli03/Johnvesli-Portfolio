@@ -822,11 +822,9 @@ header .navbar ul li a:hover {
 /* education section ends */
 
 
-/* work section starts */
-
+/* --- Work Section --- */
 .work {
     background: linear-gradient(to bottom, #000031, #00002c);
-    padding: 4rem 2rem;
 }
 
 .work h2 {
@@ -852,7 +850,7 @@ header .navbar ul li a:hover {
 }
 
 .work .box-container .box {
-    flex: 1 1 300px;
+    flex: 1 1 45%;
     border-radius: 0.8rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     position: relative;
@@ -930,6 +928,7 @@ header .navbar ul li a:hover {
     color: #ffd900;
     line-height: 1.6;
     font-family: "Nunito", sans-serif;
+    text-transform: none;
 }
 
 .work .desc .btns {
@@ -947,7 +946,6 @@ header .navbar ul li a:hover {
     font-size: 1.5rem;
     color: #ddd;
     background: rgb(12, 12, 12);
-    text-decoration: none;
     transition: background 0.3s;
 }
 
@@ -972,7 +970,6 @@ header .navbar ul li a:hover {
     box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
     text-align: center;
     background: transparent;
-    text-decoration: none;
 }
 
 .work .viewall .btn span {
@@ -997,7 +994,6 @@ header .navbar ul li a:hover {
 }
 
 
-/* work section ends */
 /* experience section starts */
 /* experience section starts */
 
